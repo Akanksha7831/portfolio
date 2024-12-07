@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins'sans-serif;
+    background-color:#16325B;
+    color:white;
+}
+html{
+    scroll-behavior: smooth;
+}
+  .PORTFOLIO-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+  font-size: 1rem;
+    height: 15vh;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+   text-transform: uppercase;
+   position:fixed;
+   margin-left: 20rem;
+
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: white;
+    position:relative;
+
+}
+.left-container, .right-container{
+    height:100vh ;
+    display: flex;
+    align-items: center;
+}
+
+.left-container{
+    background-color:#16325B;
+    width:70%;
+    padding-left: 3rem;
+}
+.right-container{
+    background: linear-gradient(-45deg,#3877ff,#16325B 80%);
+
+    width:30%;
+
+}
+.icons.fa-brands{
+    color:white;
+    font-size: 1rem;   
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+.content{
+    margin-left: 2rem;
+
+}
+.content .intro{
+    font-size: 2rem;
+}
+.content .intro span{
+    color: #5db9ee;
+}
+.content h1{font-size: 4rem;
+    color: #5db9ee;
+}
+.content .detail{
+    font-size: 1.1rem;
+    color:white;
+    max-width: 38rem;
+    margin:1.1rem 0rem 3rem 0;
+    line-height: 1.8rem;
+
+    }
+.btn-container button{
+    border:.1rem solid #5db9ee;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius:.5rem;
+    cursor: pointer;
+    transform: .5s;
+    
+}
+button:nth-child(1){
+background-color: #5db9ee;
+color: #262525;
+}
+button:nth-child(2){
+    background-color: transparent;
+    color:#5db9ee ;
+    margin-left: 2rem;
+    text-decoration: none;
+}
+button:nth-child(1):hover{
+    background-color: transparent;
+    color: #5db9ee;
+
+}
+button:nth-child(2):hover{
+    background-color:#5db9ee;
+    color:#16325B;
+
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff,#3877ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.design .circle{
+aspect-ratio: 1;
+position: absolute;
+border-radius: 30%;
+top: 50%;
+left: 70%;
+transform: translate(-50%,-50%);
+}
+.circle:nth-child(1){
+    background:linear-gradient(90degree,transparent:50%,#16325B:50%);
+    width: 28rem;
+    
+
+}
+.circle:nth-child(2){
+    background-image: url("profile4.photo.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 23rem;
+    border: 0.5rem solid white ;
+    box-shadow:  0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 1rem #3877ff, inset 0 0 1rem #3877ff, 0 0 2rem #3877ff, inset 0 0 2rem #3877ff;
+}
+/* --------about me------ */
+#about{
+    padding: 80px 0;
+    color:#fff
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 60%;
+    margin-left: 10rem;
+}
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color:#fff;
+    /* margin-left:20rem ; */
+    text-align: center;
+
+}
+.title{
+    text-align: center;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    gap: 5px;
+}
+.tab-links::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #3877ff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color:#3877ff;
+    font-size: 20px;
+}
+.tab-contents{
+    display: none;
+} 
+
+.tab-contents.active-tab{
+    display: block;
+
+}
+.projects{
+    font-size: 60px;
+    font-weight: 600;
+    color:#fff;
+    /* margin-left:20rem ; */
+    text-align: center;
+
+    /* color: #3877ff; */
+}
+.projectss{
+    display: flex;
+    gap: 5rem;
+  font-size: 2rem;
+  justify-content:center;
+  align-content: center;
+  align-items: center;
+  margin-left:5rem;
+}
+.contact{
+    align-content: center;
+  align-items: center;
+    justify-content:center;
+    font-size: 1rem;
+    margin-left:5rem;
+}
+
+
+
+
